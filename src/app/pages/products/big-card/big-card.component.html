@@ -1,0 +1,18 @@
+<h1 class="text-primary text-center mt-5 mb-5">
+    Product
+</h1>
+<div *ngIf="product" class="d-flex justify-content-center show-item">
+    <div class="product__big-card-img-wrapper mr-4 w-50">
+        <img [src]="getImg(product.img)" [alt]="product.name" class="product__big-card-img w-100">
+    </div>
+    <div class="d-flex flex-column pr-2">
+        <small class="product__type text-muted">{{ product.type }}</small>
+        <span class="product__name font-weight-bold">{{ product.name }}</span>
+        <span class="product__price text-success">{{ product.price }} $</span>
+        <span class="product__desc">{{ product.desc }}</span>
+    </div>
+</div>
+<h4 class="text-primary text-center mt-5 mb-2">
+    Similar Products
+</h4>
+<app-similar-products *ngIf="product" [type]="product.type"></app-similar-products>

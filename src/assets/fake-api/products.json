@@ -1,0 +1,108 @@
+{
+    "productsList": [
+        {
+            "name": "Product 1",
+            "desc": "product description 1",
+            "price": "100",
+            "type": "type 1",
+            "img": "4G180",
+            "id": 1
+        },
+        {
+            "name": "Product 2",
+            "desc": "product description 2",
+            "price": "200",
+            "type": "type 1",
+            "img": "4G680",
+            "id": 2
+        },
+        {
+            "name": "Product 3",
+            "desc": "product description 3",
+            "price": "300",
+            "type": "type 1",
+            "img": "ACB-AC",
+            "id": 3
+        },
+        {
+            "name": "Product 4",
+            "desc": "product description 4",
+            "price": "400",
+            "type": "type 2",
+            "img": "ACB-ISP",
+            "id": 4
+        },
+        {
+            "name": "Product 5",
+            "desc": "product description 5",
+            "price": "500",
+            "type": "type 2",
+            "img": "AF-11FX",
+            "id": 5
+        },
+        {
+            "name": "Product 6",
+            "desc": "product description 6",
+            "price": "600",
+            "type": "type 3",
+            "img": "AF-11FXDUPL",
+            "id": 6
+        },
+        {
+            "name": "Product 7",
+            "desc": "product description 7",
+            "price": "700",
+            "type": "type 3",
+            "img": "AF-11G35",
+            "id": 7
+        },
+        {
+            "name": "Product 8",
+            "desc": "product description 8",
+            "price": "800",
+            "type": "type 3",
+            "img": "AF-5XHD",
+            "id": 8
+        },
+        {
+            "name": "Product 9",
+            "desc": "product description 9",
+            "price": "900",
+            "type": "type 4",
+            "img": "AFI-INSK",
+            "id": 9
+        },
+        {
+            "name": "Product 10",
+            "desc": "product description 10",
+            "price": "1000",
+            "type": "type 4",
+            "img": "AFI-INSR",
+            "id": 10
+        },
+        {
+            "name": "Product 11",
+            "desc": "product description 11",
+            "price": "1100",
+            "type": "type 4",
+            "img": "AIR-D523X",
+            "id": 11
+        },
+        {
+            "name": "Product 12",
+            "desc": "product description 12",
+            "price": "1200",
+            "type": "type 5",
+            "img": "AIR-D530",
+            "id": 12
+        },
+        {
+            "name": "Product 13",
+            "desc": "product description 13",
+            "price": "1300",
+            "type": "type 5",
+            "img": "AIR-D530LW",
+            "id": 13
+        }
+    ]
+}

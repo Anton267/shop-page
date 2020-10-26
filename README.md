@@ -1,0 +1,1 @@
+Web shop page with login and filter by types. It using bootstrap css and fake api

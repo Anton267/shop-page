@@ -1,0 +1,23 @@
+<nav class="navbar navbar-dark bg-primary">
+    <div class="container align-items-baseline">
+        <div class="logo-wrapper d-flex justify-content-between align-items-baseline w-100">
+            <a class="navbar-brand font-weight-bold logo" href="#">Logo</a>
+            <a class="text-light d-md-none d-block" href="javascript:void(0)" (click)="logout()">Logout</a>
+        </div>
+        <ul class="navbar-nav ml-md-5 ml-0 mr-auto d-flex flex-row align-items-baseline">
+            <li class="nav-item dropdown mr-4">
+                <span [class.show]="isShowMenu" class="nav-link dropdown-toggle" role="button" (click)="toggleMenu()">
+                    {{ currentType ? currentType : 'Choose Category' }}
+                </span>
+                <div [class.show]="isShowMenu" class="dropdown-menu position-absolute">
+                    <a *ngFor="let type of typeList" class="dropdown-item" href="javascript:void(0)"
+                        [routerLink]="['/products']" (click)="[eventString(type), closeMenu()]">{{ type }}</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="text-light mr-auto" [routerLink]="['/products']" (click)="[reset(), closeMenu()]">Reset</a>
+            </li>
+        </ul>
+        <a class="text-light d-none d-md-block" href="javascript:void(0)" (click)="logout()">Logout</a>
+    </div>
+</nav>

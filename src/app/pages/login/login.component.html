@@ -1,0 +1,29 @@
+<nav class="navbar navbar-dark bg-primary fixed-top ">
+    <div class="container justify-content-start align-items-baseline">
+        <a class="navbar-brand font-weight-bold logo" href="#">Logo</a>
+        <span class="text-light">Enter to account</span>
+    </div>
+</nav>
+<div class="form-wrapper d-flex align-items-center justify-content-center show-item">
+    <form [formGroup]="loginForm" class="login-form" (ngSubmit)="login()">
+        <div class="login-form__group">
+            <label for="exampleInputEmail1">Login</label>
+            <input type="email" [formControl]="email" class="form-control" id="exampleInputEmail1"
+                aria-describedby="emailHelp" placeholder="Введите Email">
+            <div *ngIf="!email.valid && (email.dirty || email.touched)" class="position-absolute">
+                <small *ngIf="email?.errors.required" class="text-danger show-item">Enter Email</small>
+                <small *ngIf="email?.errors.email" class="text-danger show-item">Enter correct Email</small>
+            </div>
+        </div>
+        <div class="login-form__group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" [formControl]="password" class="form-control" id="exampleInputPassword1"
+                placeholder="Enter Password">
+            <div *ngIf="!password.valid && (password.dirty || password.touched)" class="position-absolute">
+                <small *ngIf="password?.errors.required" class="text-danger show-item">Enter Password</small>
+                <small *ngIf="password?.errors.minlength" class="text-danger show-item">Min length is 6</small>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary text-light" [disabled]="loginForm.invalid">Login</button>
+    </form>
+</div>

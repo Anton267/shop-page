@@ -1,0 +1,7 @@
+<div class="container product__container">
+    <div class="product-wrapper">
+        <ng-container *ngFor="let product of productList | async">
+            <app-small-card [product]="product" (click)="navigate(product.id)"></app-small-card>
+        </ng-container>
+    </div>
+</div>
